@@ -1,0 +1,58 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2d2d2f;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+
+    height: 100px;
+    width: 300px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+.progressbar{
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    background-color: rgb(219, 92, 92);
+    z-index: -1;
+}
+.cirles{
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+button{
+    width: 80px;
+    height: 20px;
+    margin: 10px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  
+}
+.prev:disabled{
+    cursor: not-allowed;
+}
+.active {
+    background-color: white;
+    color: black;
+}
